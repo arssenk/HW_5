@@ -2,7 +2,9 @@ def process_file():
     processed_file = open("processed_data.csv", "w")
 
     with open("population_by_age_sex_year.csv", "r") as f:
+
         f.readline()
+
         processed_file.write("year,number,gender\n")
         i = 0
         tmp_men = 0
@@ -32,3 +34,4 @@ def process_file():
             tmp_women = 0
 
 print(process_file())
+
